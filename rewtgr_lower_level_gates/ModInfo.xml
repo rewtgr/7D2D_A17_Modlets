@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Lower level gates" />
+		<Description value="Decrease the level gates for all perks" />
+		<Author value="rewtgr" />
+		<Version value="0.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?103597-Lower-level-gated-perks" />
+	</ModInfo>
+</xml>

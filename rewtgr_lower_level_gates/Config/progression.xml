@@ -1,0 +1,39 @@
+<configs>	
+	
+	<set xpath="/progression/perks/perk[@name='perkHammerForge']/level_requirements[@level='4']/requirement[@name='PlayerLevel']/@value">55</set>
+	<set xpath="/progression/perks/perk[@name='perkHammerForge']/level_requirements[@level='5']/requirement[@name='PlayerLevel']/@value">80</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkHammerForge']/level_requirements[@level='4']/requirement[@name='PlayerLevel']/@desc_key">Intellect 8</set>
+	<set xpath="/progression/perks/perk[@name='perkHammerForge']/level_requirements[@level='4']/requirement[@name='ProgressionLevel']/@desc_key">Level 55</set>
+	<set xpath="/progression/perks/perk[@name='perkHammerForge']/level_requirements[@level='5']/requirement[@name='PlayerLevel']/@desc_key">Intellect 10</set>
+	<set xpath="/progression/perks/perk[@name='perkHammerForge']/level_requirements[@level='5']/requirement[@name='ProgressionLevel']/@desc_key">Level 80</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='3']/requirement[@name='PlayerLevel']/@value">45</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='4']/requirement[@name='PlayerLevel']/@value">70</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='5']/requirement[@name='PlayerLevel']/@value">100</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='3']/requirement[@name='PlayerLevel']/@desc_key">Intellect 7</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='3']/requirement[@name='ProgressionLevel']/@desc_key">Level 45</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='4']/requirement[@name='PlayerLevel']/@desc_key">Intellect 9</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='4']/requirement[@name='ProgressionLevel']/@desc_key">Level 70</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='5']/requirement[@name='PlayerLevel']/@desc_key">Intellect 10</set>
+	<set xpath="/progression/perks/perk[@name='perkGreaseMonkey']/level_requirements[@level='5']/requirement[@name='ProgressionLevel']/@desc_key">Level 100</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='1']/requirement[@name='PlayerLevel']/@value">20</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='2']/requirement[@name='PlayerLevel']/@value">35</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='3']/requirement[@name='PlayerLevel']/@value">50</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='4']/requirement[@name='PlayerLevel']/@value">65</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='5']/requirement[@name='PlayerLevel']/@value">90</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='1']/requirement[@name='PlayerLevel']/@desc_key">Intellect 5</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='1']/requirement[@name='ProgressionLevel']/@desc_key">Level 20</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='2']/requirement[@name='PlayerLevel']/@desc_key">Intellect 7</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='2']/requirement[@name='ProgressionLevel']/@desc_key">Level 35</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='3']/requirement[@name='PlayerLevel']/@desc_key">Intellect 8</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='3']/requirement[@name='ProgressionLevel']/@desc_key">Level 50</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='4']/requirement[@name='PlayerLevel']/@desc_key">Intellect 9</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='4']/requirement[@name='ProgressionLevel']/@desc_key">Level 65</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='5']/requirement[@name='PlayerLevel']/@desc_key">Intellect 10</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/level_requirements[@level='5']/requirement[@name='ProgressionLevel']/@desc_key">Level 90</set>
+	
+</configs>

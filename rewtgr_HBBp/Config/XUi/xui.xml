@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<set xpath="xui/ruleset[@name='default']/@scale">1.000</set>
+	<set xpath="xui/ruleset[@name='default']/@stackpanel_scale">1.000</set>
+	<set xpath="xui/ruleset[@name='default']/window_group[@name='character']/window[@name='ActiveBuffsWindow']/@name">ActiveBuffsWindowHBB</set>
+	<set xpath="xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowOutput']/@name">windowOutputHBB</set>
+	<set xpath="xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">windowForgeInputHBB</set>
+	<set xpath="xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowForgeOutputHBB</set>
+	<set xpath="xui/ruleset[@name='default']/window_group[@name='looting']/window[@name='windowLooting']/@name">windowLootingHBB</set>
+		<insertAfter xpath="xui/ruleset[@name='default']/window_group[@name='looting']/window[@name='windowNonPagingHeader']" >
+			<window name="windowLootingPlaceholderHBB" />
+		</insertAfter>
+		<insertAfter xpath="xui/ruleset[@name='default']/window_group[@name='backpack']/window[@name='windowBackpack']" >
+			<window name="windowLootingPlaceholderHBB" />
+		</insertAfter>
+		<insertAfter xpath="xui/ruleset[@name='default']/window_group[@name='vehicleStorage']/window[@name='windowNonPagingHeader']" >
+			<window name="windowLootingPlaceholderHBB" />
+		</insertAfter>
+</configs>

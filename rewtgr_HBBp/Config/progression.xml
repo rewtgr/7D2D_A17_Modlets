@@ -1,0 +1,16 @@
+<configs>
+	
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/level_requirements/requirement[@name='ProgressionLevel']/@value">1</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='4']/@value">18</set>
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='9']/@value">36</set>
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='15']/@value">54</set>
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='21']/@value">72</set>
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">90</set>
+	
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/level_requirements/requirement[starts-with(@desc_key, 'reqStrengthLevel')]/@desc_key">Strength Level 1</set>
+
+<!-- NOT WORKING. Adding blank descriptions
+	<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/effect_description[starts-with(@desc_key, 'perkPackMuleRank')]/@desc_key">Carry 18 more items without being encumbered</set>
+-->
+</configs>

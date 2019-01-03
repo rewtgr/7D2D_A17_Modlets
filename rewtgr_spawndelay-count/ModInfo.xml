@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Spawn delay and max count 1" />
+		<Description value="Reduce spawndelay for zombies to 1(4 vanilla) and enemyanimals to 2(7 vanilla) ingame days. Also increase the 'ANY' and 'DAY' zombiecount by 1" />
+		<Author value="rewtgr" />
+		<Version value="0.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?103450-Increase-of-zombies-and-reduced-respawn-delay" />
+	</ModInfo>
+</xml>

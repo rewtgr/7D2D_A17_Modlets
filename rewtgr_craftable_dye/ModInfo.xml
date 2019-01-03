@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Craftable dye mod" />
+		<Description value="Makes the dye mods craftable in chemistry station and costs 1 paint." />
+		<Author value="rewtgr" />
+		<Version value="0.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?103594-Craftable-dye-mods" />
+	</ModInfo>
+</xml>

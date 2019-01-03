@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Asphalt and bed buffs" />
+        <Description value="Change only the player's running speed to 1.3 and walking speed to 1.2 when you walk on asphalt. Also adds a minor bedroll/bed healing buff" />
+        <Author value="rewtgr" />
+        <Version value="0.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?102864-Asphalt-and-beds-BUFFS" />
+    </ModInfo>
+</xml>

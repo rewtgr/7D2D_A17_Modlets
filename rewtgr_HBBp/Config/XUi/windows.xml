@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">8</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">18</set>
+	<append xpath="/windows">
+			<window name="windowLootingPlaceholderHBB" width="550" height="121" panel="Right" visible="false">
+				<panel style="header.panel" pos="-10,-430" disableautobackground="true" />
+			</window>
+	
+			<window name="windowLootingHBB" width="378" height="378" controller="LootWindow" panel="Left" anchor_side="bottomright" visible="false">		
+					<panel name="header" height="43" depth="0" disableautobackground="true">
+						<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header"/>
+						<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
+						<label depth="2" name="lootName" pos="39,-6" width="172" height="32" text="LOOT" text_key="xuiLoot" font_size="32" />
+						<label depth="2" name="takeAllLabel" width="32" height="28" text="'R'" text_key="xuiTakeAllKey" font_size="28" color="[mediumGrey]" justify="right" pos="260,-8"/>
+						<sprite depth="2" name="takeAllIcon" style="icon32px" sprite="ui_game_symbol_hand" color="[mediumGrey]" pos="220, -4"/>
+					</panel>
+					<sprite depth="0" name="gridBackground" color="255,255,255,1" type="sliced" pos="0, 0" globalopacity="true" on_press="true" />
+				<rect name="content" pos="3,-49" >
+					<grid depth="12" name="queue" rows="10" cols="25" cell_width="75" cell_height="75" repeat_content="true" controller="LootContainer">
+						<item_stack name="0"/>
+					</grid>
+				</rect>
+			</window>
+			
+			<window name="ActiveBuffsWindowHBB" Controller="ActiveBuffWindow" width="320" height="725" panel="Right" cursor_area="true" >
+				<panel name="header" height="43" width="635" depth="1" backgroundspritename="ui_game_panel_header">
+					<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_medical"/>
+					<label depth="2" name="characterName" pos="42,-6" width="250" height="32" text="STATUS EFFECTS" text_key="xuiStatusEffects" font_size="32"/>
+					<button depth="4" name="pageDown" style="icon30px, press" pos="320,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+					<rect depth="4" pos="337,-7" >
+						<sprite name="background" style="icon30px" color="64,64,64" type="sliced" />
+						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+					</rect>
+						<button depth="4" name="pageUp" style="icon30px, press" pos="384,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+				</panel>
+				<grid name="buffs" rows="9" cols="2" pos="3,-43" cell_width="314" cell_height="43" repeat_content="true" controller="ActiveBuffList">
+						<active_buff_entry />
+					</grid>
+
+			</window>
+			
+			<window name="windowVehicleHBB" width="380" height="733" panel="Right" controller="VehicleFrameWindow" cursor_area="true">
+				<panel name="header" pos="3,0" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+					<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_minibike" />
+					<label style="header.name" text="{vehiclenamequality}" />
+					<sprite depth="2" width="112" pos="260, -17" height="10" type="sliced" color="[black]" />
+					<sprite depth="2" width="110" pos="261, -18" height="8" type="sliced" color="[mediumGrey]" />
+					<sprite depth="2" name="sprVehicleQuality" width="110" pos="261, -18" height="8" type="filled" color="{vehiclequalitycolor}" />
+				</panel>
+				<panel name="content" depth="0" pos="0,-43" disableautobackground="true">
+					<sprite color="[darkGrey]" pos="3,-3" height="376" />
+					<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="3,-3" width="380" height="378" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+					<rect depth="1" pos="3,-3" width="380" height="435">
+						<rect pos="3,-3" width="374" height="218">
+						<sprite color="[mediumGrey]" type="sliced" />
+						<texture depth="2" name="vehiclePreview" material="Materials/Transparent Colored" size="374,218" />
+						<label depth="3" pos="14,-20" font_size="26" text="{vehiclequalitytitle}: [DECEA3]{vehiclequality}[-]" width="200" height="30" />
+						<label depth="3" pos="14,-50" font_size="26" text="{vehicledurabilitytitle}: [DECEA3]{vehicledurability}[-]" width="200" height="30" />
+					</rect>
+				<grid name="parts" rows="8" cols="1" pos="390,46" cell_width="374" cell_height="60" repeat_content="true" controller="VehiclePartStackGrid">
+					<vehicle_part_slot />
+				</grid>
+				<rect name="btnRepair" depth="3" pos="0, -378" height="56">
+					<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+					<rect depth="3" name="background" pos="3,-5" width="183" height="48">
+						<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="36,-12" sprite="ui_game_symbol_wrench" color="[black_half_alpha]" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="34,-12" sprite="ui_game_symbol_wrench" color="[black_half_alpha]" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="34,-10" sprite="ui_game_symbol_wrench" color="[black_half_alpha]" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="36,-10" sprite="ui_game_symbol_wrench" color="[black_half_alpha]" />
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="35,-11" sprite="ui_game_symbol_wrench" />
+						<label depth="2" name="windowName" pos="0,-11" justify="center" text="REPAIR" text_key="xuiRepair" font_size="28" />
+					</rect>
+				</rect>
+				</rect>
+		</panel>
+	</window>
+	
+	<window name="windowVehicleStorageHBB" width="903" height="262" depth="5" anchor="CenterTop" panel="Left" backgroundcolor="[black]" cursor_area="true">
+		<panel name="header" pos="-7,33" width="978" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header"/>
+			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
+			<label depth="2" style="header.name" name="lootName" text="VEHICLE STORAGE" text_key="xuiVehicleStorage" />
+			<label depth="2" name="takeAllLabel" width="32" height="30" font_size="30" color="[mediumGrey]" justify="left" pos="260,-8"/>
+			<sprite depth="2" name="takeAllIcon" style="icon32px" sprite="ui_game_symbol_hand" color="[mediumGrey]" pos="220, -4"/>
+		</panel>
+		<grid depth="2" name="inventory" rows="13" cols="14" pos="-5,-15" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
+			<item_stack name="0" />
+		</grid>
+	</window>
+	
+	<window name="windowForgeInputHBB" width="228" height="274" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]">
+		<panel style="header.panel" pos="237,350">
+			<sprite style="header.icon" sprite="ui_game_symbol_forge" />
+			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
+		</panel>
+		<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="237,304" height="229" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+		<rect name="content" depth="1" pos="237,304" height="153">
+			<grid depth="7" rows="3" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationMaterialInputGrid" repeat_content="true">
+				<item_stack name="0" />
+			</grid>
+		</rect>
+		<rect name="content2" depth="0" pos="315,301" width="147" height="223">
+			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true" />
+			<grid rows="6" cols="1" pos="3,-3" cell_width="147" cell_height="35" repeat_content="true">
+				<forge_material name="0" />
+			</grid>
+		</rect>
+	</window>
+	<window name="windowForgeOutputHBB" width="228" height="198" anchor="CenterTop" panel="Right">
+		<panel style="header.panel" pos="237,356">			
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+		</panel>
+		<rect name="content" depth="0" pos="237,316" height="150" disablefallthrough="true" on_press="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
+				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+		</rect>
+	</window>
+	
+	
+	<window name="windowOutputHBB" width="228" height="198" anchor="CenterTop" panel="Right">
+		<panel style="header.panel" pos="237,306">			
+			<sprite style="header.icon" sprite="ui_game_symbol_loot_sack"/>
+			<label style="header.name" text="OUTPUT" text_key="xuiOutput" />
+		</panel>
+		<rect name="content" depth="0" pos="237,260" height="150" disablefallthrough="true" on_press="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" height="150" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
+				<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationOutputGrid" repeat_content="true">
+					<item_stack name="0"/>
+				</grid>
+		</rect>
+	</window>
+	</append>
+</configs>

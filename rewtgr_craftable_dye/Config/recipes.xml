@@ -1,0 +1,32 @@
+<configs>
+
+	<append xpath="/recipes">
+	
+	
+	<recipe name="modDyeRed" craft_area="chemistryStation" count="1">
+		<ingredient name="resourcePaint" count="1"/>
+	</recipe>
+	
+	<recipe name="modDyeGreen" craft_area="chemistryStation" count="1">
+		<ingredient name="resourcePaint" count="1"/>
+	</recipe>
+	
+	<recipe name="modDyeBlack" craft_area="chemistryStation" count="1">
+		<ingredient name="resourcePaint" count="1"/>
+	</recipe>
+	
+	<recipe name="modDyeBlue" craft_area="chemistryStation" count="1">
+		<ingredient name="resourcePaint" count="1"/>
+	</recipe>
+	
+	<recipe name="modDyeBrown" craft_area="chemistryStation" count="1">
+		<ingredient name="resourcePaint" count="1"/>
+	</recipe>
+	
+	<recipe name="modDyePink" craft_area="chemistryStation" count="1">
+		<ingredient name="resourcePaint" count="1"/>
+	</recipe>
+
+	</append>
+	
+</configs>

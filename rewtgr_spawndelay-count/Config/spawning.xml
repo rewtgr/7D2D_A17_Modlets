@@ -1,0 +1,22 @@
+<configs>
+
+<!-- change the respawn delay from 4 ingame days to 1 for zombies and from 7 to 2 for enemyanimals -->
+
+<set xpath="/spawning/biome/spawn[@entitygroup='ZombiesAll']/@respawndelay">1</set> 
+<set xpath="/spawning/biome/spawn[@entitygroup='ZombiesBurntForest']/@respawndelay">1</set>
+<set xpath="/spawning/biome/spawn[@entitygroup='SnowZombies']/@respawndelay">1</set>
+
+<set xpath="/spawning/biome/spawn[@entitygroup='EnemyAnimalsForest']/@respawndelay">2</set>
+<set xpath="/spawning/biome/spawn[@entitygroup='EnemyAnimalsDesert']/@respawndelay">2</set>
+<set xpath="/spawning/biome/spawn[@entitygroup='EnemyAnimalsBurntForest']/@respawndelay">2</set>
+<set xpath="/spawning/biome/spawn[@entitygroup='EnemyAnimalsSnow']/@respawndelay">2</set>
+<!-- EnemyAnimalsWasteland is already @ 1 day --> 
+
+<!-- adding 1 more zombie count (from 2->3 etc) for day zombies. Didn't change the nightzombies. -->
+
+<set xpath="/spawning/biome/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set> 
+<set xpath="/spawning/biome/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">3</set> 
+<set xpath="/spawning/biome/spawn[@entitygroup='SnowZombies']/@maxcount">2</set> 
+
+
+</configs>

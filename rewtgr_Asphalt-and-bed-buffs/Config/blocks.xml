@@ -1,0 +1,22 @@
+<configs>
+	<!-- run buff -->
+
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="BuffsWhenWalkedOn" value="meeptrigger"/>
+	</append>
+
+	<!-- rest buff -->
+	
+	<append xpath="blocks/block[@name='bedroll']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger"/>
+	</append>
+
+	<append xpath="blocks/block[@name='bed01']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger"/>
+	</append>
+
+	<append xpath="blocks/block[@name='bed02']">
+		<property name="BuffsWhenWalkedOn" value="resttrigger"/>
+	</append>
+	
+</configs>

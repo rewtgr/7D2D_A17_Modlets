@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="30K-itemstack+" />
+		<Description value="Change all items stack size to 30.000 for all stackable items" />
+		<Author value="rewtgr" />
+		<Version value="0.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?95089-30-000-items-stack-size" />
+	</ModInfo>
+</xml>
